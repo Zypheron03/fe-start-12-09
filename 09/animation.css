@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes simple {
+    from{
+      background-color: blue;
+      border-radius: 0%;
+      top: 0px;
+    }
+    to{
+    background-color: yellow;
+    border-radius: 100%;
+    top: 600px;
+    }
+}
+@keyframes pro {
+    0%{
+        background-color: blue;
+        border-radius: 0%;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+       background-color: black;
+       border-radius: 25%;
+       top: 450px;
+       left: 200px;
+    }
+    50%{
+        background-color: red;
+        border-radius: 50%;
+        top: 300px;
+        left: 400px;
+    }
+    75%{
+        background-color: green;
+        border-radius: 75%;
+        top: 250px;
+        left: 200px;
+    }
+    100%{
+        background-color: yellow;
+    border-radius: 100%;
+    top: 600px;
+    left: 0px;
+    }
+}
+.example{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: relative;
+    animation-name: pro;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+.second{
+    margin-top: 200px;
+    animation-delay: 0.1s;
+    animation-direction: reverse;
+}

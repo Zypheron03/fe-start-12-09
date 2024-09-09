@@ -1,0 +1,111 @@
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.dm-sans-700 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.dm-sans-500 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .dm-sans-400 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    color: white;
+    background-color: rgb(36, 37, 42);
+    margin: 0 auto;
+  }
+header{
+    margin: 0 auto;
+   padding: 25px 77px 78px 77px;
+   
+   width: 88.35%;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   grid-template-columns: repeat(5,1fr);
+   font-size: 22px;
+   }
+   header h2:hover{
+    color: rgba(255, 146, 44, 0.78);
+    transform: scale(1.2);
+  }
+  header input{
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: rgba(255, 249, 240, 0.1);
+    color: rgba(156, 152, 152, 0.47);
+    height: 60px;
+    margin-left: 75px;
+    padding-left: 37px;
+    border: none;
+  }
+  .text{
+    width: 47.27%;
+    background-color: aqua;
+    margin-left: 16.8%;
+    
+  }
+  .caption{
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-items: center;
+    
+
+  }
+  .oneblock{
+    padding-top: none;
+    font-size: 125px;
+    margin: 0;
+  }
+  .twoblock{
+    font-size: 52px;
+    color: rgba(255, 146, 44, 0.78);
+    margin: 0;
+    line-height: 1;
+  }
+  .tekst{
+    
+    font-size: 22px;
+    color: rgb(144, 144, 144);
+  }
+ 
+
+
+  
+
+  
