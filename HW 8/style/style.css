@@ -3,35 +3,42 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+  
   }
   
   .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 22px;
   }
   .poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin: 0;
+    line-height: 1;
   }
 .dm-sans-700 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  margin: 0 auto;
 }
 .dm-sans-500 {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin: 0 ;
   }
   .dm-sans-400 {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin: 0 auto;
   }
 
   .dm-serif-text-regular {
@@ -74,37 +81,204 @@ header{
   }
   .text{
     width: 47.27%;
-    background-color: aqua;
+    
     margin-left: 16.8%;
     
   }
   .caption{
     display: flex;
     flex-direction: row;
-
-    align-items: flex-start;
-    justify-items: center;
-    
+    margin-top: 0px;
+    align-items: center;
 
   }
   .oneblock{
     padding-top: none;
     font-size: 125px;
-    margin: 0;
+    
+    
   }
   .twoblock{
     font-size: 52px;
     color: rgba(255, 146, 44, 0.78);
-    margin: 0;
     line-height: 1;
   }
   .tekst{
-    
+  
     font-size: 22px;
     color: rgb(144, 144, 144);
   }
- 
+  .menu{
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: 8%;
+  }
+  .breakfast:hover{
+    color: rgba(255, 146, 44, 0.78);
+    filter: drop-shadow(0 0 15px rgba(255, 146, 44, 0.78));
+    transform: scale(1.1);
+}
+.lunch:hover{
+    color: rgba(255, 146, 44, 0.78);
+    filter: drop-shadow(0 0 15px rgba(255, 146, 44, 0.78));
+    transform: scale(1.1);
+}
+.dinner:hover{
+    color: rgba(255, 146, 44, 0.78);
+    filter: drop-shadow(0 0 15px rgba(255, 146, 44, 0.78));
+    transform: scale(1.1);
+}
+.recipe{
+    display: grid;
+   grid-template-areas: 
+   "header header"
+   "left right";
 
+    width: 46.89%;
+    margin-left: 16.8%;
+}
+.name-dish{
+  font-size: 42px;
+  grid-area: header;
+}
+.ingredients{
+  font-size: 20px;
+  grid-area: left;
+}
+ul{
+  color: rgb(196, 196, 196);
+}
+li span{
+  color: rgb(255, 146, 44);
+}
+.info{
+  grid-area: right;
+}
+.info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 67px;
+  font-size: 24px;
+}
+.info-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 16px;
+  
+  
+}
+span{
+  
+    font-size: 20px;
+    color:rgba(255, 146, 44, 0.78) ;
+}
+.designer{
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+.rating{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: wrap;
+  height: auto;
+  width: 88.35%;
+  font-size: 28px;
+  padding-left: 77px;
+}
+.img-rating{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+}
+p span{
+  font-size: 28px;
+}
+.grey{
+  padding-right: 36px;
+  color: rgba(170, 167, 167, 0.46);
+}
+@media (max-width: 1100px){
+  header {
+    grid-template-columns: repeat(2, 1fr); /* Зменшення кількості колонок */
+    gap: 10px;
+    padding: 15px; /* Зменшення відступів */
+    justify-items: center; /* Вирівнювання по лівому краю */
+  }
+  
+  header h2 {
+    font-size: 16px; /* Зменшення шрифту для заголовків */
+  }
+
+  .poppins-regular-input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    grid-column: -3/-1;
+  }
+  .text {
+    width: 80%; /* Зменшення ширини текстового блоку */
+    margin-left: 10%; /* Центрування */
+  }
+
+  .oneblock {
+    font-size: 72px; /* Зменшення розміру основного заголовка */
+  }
+
+  .twoblock {
+    font-size: 32px; /* Зменшення підзаголовка */
+  }
+
+  .tekst {
+    font-size: 18px; /* Зменшення розміру тексту */
+  }
+  /* Адаптація секції рецептів */
+  .recipe {
+    width: 80%; /* Зменшення ширини секції рецептів */
+    margin-left: 10%;
+    grid-template-areas: 
+      "header"
+      "left"
+      "right"; /* Переносимо блоки один під одним */
+  }
+
+  .name-dish {
+    font-size: 32px; /* Зменшення розміру заголовку рецепту */
+    text-align: center; /* Центрування назви страви */
+  }
+
+  .ingredients, .info {
+    font-size: 18px; /* Зменшення шрифтів для списків і інформації */
+  }
+
+  .info {
+    grid-template-columns: 1fr 1fr 1fr; /* Відображення інформації у стовпчик */
+    gap: 10px;
+  }
+  .designer {
+    font-size: 32px; /* Зменшення заголовку у футері */
+  }
+
+  .rating {
+    font-size: 20px; /* Зменшення розміру шрифту у футері */
+    padding-left: 20px; /* Зменшення відступу зліва */
+    justify-content: center;
+  }
+
+  .img-rating {
+    font-size: 20px; /* Зменшення розміру іконок рейтингу */
+  }
+
+}
+@media (max-width: 1100px) {
+  
+}
 
   
 
